@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- offline bootstrap -->
+    <link rel="stylesheet" href="/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <title>Gallery</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js "></script>
+    <script src="https://kit.fontawesome.com/ef2ab9a6a2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="container-fluid gx-0 overflow-hidden">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #222; height: 90px;">
+      <div class="container">
+        <a class="navbar-brand" data-aos="fade-right" href="#" style="font-size: 2em; font-weight:400; font-family:'EB Garamond', serif; "><img src="images/com logo.png" alt="" height="70px" width="70px">ALIGRAPHY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" data-aos="fade-right" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mg-lg-0" id="ul1">
+            <li class="nav-item">
+              <a class="nav-link active link-light " aria-current="page" href="index.html" target="_self">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="about.html" target="_self">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="gallery.html" target="_self">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link link-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ALL.html" target="_blank">Show All</a></li>
+              <li><a class="dropdown-item" href="Kids.html" target="_blank">Easy For Kids</a></li>
+              <li><a class="dropdown-item" href="elder.html" target="_blank">Complex For Elder</a></li>
+              </ul>
+          </li>         
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light " href="contact.html" target="_self">Contact Us</a>
+            </li>
+            <li class="nav-item" id="">            
+              <a class="nav-link  px-3 " href="#" style="font-weight: 300; font-size: 18px; color: #bea163;"><i class="fa-solid fa-person"></i> Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="w1" class="card text-bg-dark overflow-hidden">
+        <img src="images/6.png" id="op" height="790px" width="100%" class="card-img" alt="...">
+        <div id="op0" class="card-img-overlay">
+          <h5 id="op2" class="card-title"> QUICK</h5>
+          <h4 id="op3" class="card-title">CALLIGRAPHY</h4>
+          <a id="op4" href="about.html">Visit more <i id="op5" class="fa-solid fa-arrow-right"></i></a>
+          <p id="op6" class="card-text">Art is the silent story teller of the soul's emotion.</p>
+        </div>
+      </div>
+    <div class="card overflow-hidden" id="q1">
+        <h2 class="card-title" id="q2">QUICK CALLIGRAPHY GALLERY</h2>
+          <p class="card-text" id="q3">Experience the beauty of Quick calligraphy with our gallery of hand-crafted pieces. From traditional to modern designs, our collection showcases the artistry and skill of our calligraphers. Discover the rich cultural heritage of Quick calligraphy today. Browse through our selection and find the perfect piece. You can request a logo like it</p>
+      </div>
+    </div>
+    <div class="container-fluid">
+  <div class="row d-flex justify-content-center ">
+    <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-lg-2 col-md-6 sm-6" style="height: 100%;">
+<img style="object-fit: cover; border-radius: 20px;" height="100%" width="100%" src="images/02b35acb-616d-410b-9df2-ef8b77fdb25a.jpg" alt="">
+    </div>
+    <div data-bs-toggle="modal" data-bs-target="#kk"  class="col-lg-2 col-md-6 sm-6" style="height: 100%;">
+      <img style="object-fit: cover; border-radius: 20px;" height="100%" width="100%" src="images/e08de20c-634e-4c9c-b81a-a3d75c8c8c24.jpg" alt="">
+          </div>
+                <div data-bs-toggle="modal" data-bs-target="#kk2" class="col-lg-2 col-md-6 sm-6" style="height: 100%;">
+                  <img style="object-fit: cover; border-radius: 20px;" height="100%" width="100%" src="images/5f0394fe-41c3-4861-9373-0e8f9ee36329.jpg" alt="">
+                      </div>
+                      <div data-bs-toggle="modal" data-bs-target="#kk3" class="col-lg-2 col-md-6 sm-6" style="height: 100%;">
+                        <img style="object-fit: cover; border-radius: 20px;" height="100%" width="100%" src="images/19f41583-c9ac-4d6c-8242-5ad9ce6c20f5.jpg" alt="">
+                            </div>    
+                             <div data-bs-toggle="modal" data-bs-target="#kk4" class="col-lg-2 col-md-6 sm-6" style="height: 100%;">
+            <img style="object-fit: cover; border-radius: 20px;" height="100%" width="100%" src="images/Versions Share ©by_  █║ Rhèñdý Hösttâ ║█  Thank you for visiting my pin in Pinterest♡.jpg" alt="">
+                </div> 
+  </div>
+  <div class="row d-flex justify-content-center">
+<div data-bs-toggle="modal" data-bs-target="#kk5" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -100px;">
+<img style="object-fit: contain; border-radius: 20px;" src="images/Gamil Yoheb El Gamal.jpg" height="100%" width="100%" alt=""></div>
+<div data-bs-toggle="modal" data-bs-target="#kk6" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -40px;">
+  <img style="object-fit: contain; border-radius: 20px;" src="images/Bismillah_ Benefits, Wazifa, and Importance.jpg" height="100%" width="100%" alt=""></div>
+  <div data-bs-toggle="modal" data-bs-target="#kk7" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -40px;">
+    <img style="object-fit: contain; border-radius: 20px;" src="images/_سلام هي حتى مطلع الفجر_.jpg" height="100%" width="100%" alt=""></div>
+    <div data-bs-toggle="modal" data-bs-target="#kk8" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+      <img style="object-fit: contain; border-radius: 20px;" src="images/6676ca96-263e-4001-bcd1-e5ebbddd7abb.jpg" height="100%" width="100%" alt=""></div>
+      <div data-bs-toggle="modal" data-bs-target="#kk9" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -20px;">
+        <img style="object-fit: contain; border-radius: 20px;" src="images/tüm Limanlar yakılır nuhun gemisi  tek seçenek….jpg" height="100%" width="100%" alt=""></div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div data-bs-toggle="modal" data-bs-target="#kk10" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -210px;">
+    <img style="object-fit: contain; border-radius: 20px;" src="images/d500ed8f-788e-49c1-8e77-083ca0ddbbe2.jpg" height="100%" width="100%" alt=""></div>
+    <div data-bs-toggle="modal" data-bs-target="#kk11" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -70px;">
+      <img style="object-fit: contain; border-radius: 20px;" src="images/keyword-suggestions_com.jpg" height="100%" width="100%" alt=""></div>
+      <div data-bs-toggle="modal" data-bs-target="#kk12" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -150px;">
+        <img style="object-fit: contain; border-radius: 20px;" src="images/typography vol_ 1.jpg" height="100%" width="100%" alt=""></div>
+        <div data-bs-toggle="modal" data-bs-target="#kk13" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+          <img style="object-fit: contain; border-radius: 20px;" src="images/DesertRose___سبحان الله وبحمده سبحان الله….jpg" height="100%" width="100%" alt=""></div>
+          <div data-bs-toggle="modal" data-bs-target="#kk14" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -150px;">
+            <img style="object-fit: contain; border-radius: 20px;" src="images/Typography 7.jpg" height="100%" width="100%" alt=""></div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div  data-bs-toggle="modal" data-bs-target="#kk15" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -180px;">
+        <img style="object-fit: contain; border-radius: 20px;" src="images/Arabic calligraphy.jpg" height="100%" width="100%" alt=""></div>
+        <div  data-bs-toggle="modal" data-bs-target="#kk16" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -80px;">
+          <img style="object-fit: contain; border-radius: 20px;" src="Images/Untitled.jpg" height="100%" width="100%" alt=""></div>
+          <div  data-bs-toggle="modal" data-bs-target="#kk17" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -200px;">
+            <img style="object-fit: contain; border-radius: 20px;" src="images/calligraphy names.jpg" height="100%" width="100%" alt=""></div>
+            <div  data-bs-toggle="modal" data-bs-target="#kk18" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+              <img style="object-fit: contain; border-radius: 20px;" src="Images/9ec901ab-979c-43b0-a686-347883ed1222.jpg" height="100%" width="100%" alt=""></div>
+              <div  data-bs-toggle="modal" data-bs-target="#kk19" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -190px;">
+                <img style="object-fit: contain; border-radius: 20px;" src="Images/Arabic calligraphy (1).jpg" height="100%" width="100%" alt=""></div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div data-bs-toggle="modal" data-bs-target="#kk20" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -130px;">
+            <img style="object-fit: contain; border-radius: 20px;" src="images/eba07725-3deb-4b21-a1ba-c9d9af9bdce8.jpg" height="100%" width="100%" alt=""></div>
+            <div data-bs-toggle="modal" data-bs-target="#kk21" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -20px;">
+              <img style="object-fit: contain; border-radius: 20px;" src="Images/Les Calligraphies · El Calam.jpg" height="100%" width="100%" alt=""></div>
+              <div data-bs-toggle="modal" data-bs-target="#kk22" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -180px;">
+                <img style="object-fit: contain; border-radius: 20px;" src="images/This item is unavailable - Etsy.jpg" height="100%" width="100%" alt=""></div>
+                <div data-bs-toggle="modal" data-bs-target="#kk23" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+                  <img style="object-fit: contain; border-radius: 20px;" src="Images/Be satisfied with what Allah has apportioned for….jpg" height="100%" width="100%" alt=""></div>
+                  <div data-bs-toggle="modal" data-bs-target="#kk24" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -130px;">
+                    <img style="object-fit: contain; border-radius: 20px;" src="Images/78dfd089-c812-406f-becb-211103edb289.jpg" height="100%" width="100%" alt=""></div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div data-bs-toggle="modal" data-bs-target="#kk25" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -250px;">
+                <img style="object-fit: contain; border-radius: 20px;" src="images/Arabic calligraphy (1).jpg" height="100%" width="100%" alt=""></div>
+                <div data-bs-toggle="modal" data-bs-target="#kk26" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -120px;">
+                  <img style="object-fit: contain; border-radius: 20px;" src="Images/9ec901ab-979c-43b0-a686-347883ed1222.jpg" height="100%" width="100%" alt=""></div>
+                  <div data-bs-toggle="modal" data-bs-target="#kk27" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -150px;">
+                    <img style="object-fit: contain; border-radius: 20px;" src="images/DesertRose,,, Bismillah.jpg" height="100%" width="100%" alt=""></div>
+                    <div data-bs-toggle="modal" data-bs-target="#kk28" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+                      <img style="object-fit: contain; border-radius: 20px;" src="Images/b935942f-b074-4647-85c7-0e60ebe5997c.jpg" height="100%" width="100%" alt=""></div>
+                      <div data-bs-toggle="modal" data-bs-target="#kk29" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -190px;">
+                        <img style="object-fit: contain; border-radius: 20px;" src="Images/0ce3de8a-3cf6-4950-bdd1-ace5969ed639.jpg" height="100%" width="100%" alt=""></div>
+                  </div>
+                  <div class="row d-flex justify-content-center">
+                    <div data-bs-toggle="modal" data-bs-target="#kk30" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -280px;">
+                    <img style="object-fit: contain; border-radius: 20px;" src="images/33f48724-f305-4a66-a9cf-4bce458a9ecd.jpg" height="100%" width="100%" alt=""></div>
+                    <div data-bs-toggle="modal" data-bs-target="#kk31" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -210px;">
+                      <img style="object-fit: contain; border-radius: 20px;" src="Images/64da0530-d403-4a22-a8a4-780547b47e2c.jpg" height="100%" width="100%" alt=""></div>
+                      <div data-bs-toggle="modal" data-bs-target="#kk32" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -210px;">
+                        <img style="object-fit: contain; border-radius: 20px;" src="images/الأستاذ عدنان الشيخ عثمان _حمص.jpg" height="100%" width="100%" alt=""></div>
+                        <div data-bs-toggle="modal" data-bs-target="#kk33" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+                          <img style="object-fit: contain; border-radius: 20px;" src="Images/85d3b0d4-d6a7-4eb7-8e3a-f907912e2e3e.jpg" height="100%" width="100%" alt=""></div>
+                          <div data-bs-toggle="modal" data-bs-target="#kk34" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -265px;">
+                            <img style="object-fit: contain; border-radius: 20px;" src="Images/68e93791-adaf-44d7-84bb-73121c8a46d9.jpg" height="100%" width="100%" alt=""></div>
+                      </div>
+                      <div class="row d-flex justify-content-center">
+                        <div data-bs-toggle="modal" data-bs-target="#kk35" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -290px;">
+                        <img style="object-fit: contain; border-radius: 20px;" src="images/Arabic calligraphy (3).jpg" height="100%" width="100%" alt=""></div>
+                        <div data-bs-toggle="modal" data-bs-target="#kk36" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -270px;">
+                          <img style="object-fit: contain; border-radius: 20px;" src="Images/184929cc-9b04-4c25-bb7a-63d1a17a344d.jpg" height="100%" width="100%" alt=""></div>
+                          <div data-bs-toggle="modal" data-bs-target="#kk37" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -245px;">
+                            <img style="object-fit: contain; border-radius: 20px;" src="images/بسم الله الرحمن الرحيم.jpg" height="100%" width="100%" alt=""></div>
+                            <div data-bs-toggle="modal" data-bs-target="#kk38" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+                              <img style="object-fit: contain; border-radius: 20px;" src="Images/1cfeffbd-f87b-4eac-8718-02099710f57b.jpg" height="100%" width="100%" alt=""></div>
+                              <div data-bs-toggle="modal" data-bs-target="#kk39" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -310px;">
+                                <img style="object-fit: contain; border-radius: 20px;" src="Images/58731d5f-8550-4472-baa0-e658a2700fdb.jpg" height="100%" width="100%" alt=""></div>
+                          </div>
+                          <div class="row d-flex justify-content-center">
+                            <div data-bs-toggle="modal" data-bs-target="#kk40" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -330px;">
+                            <img style="object-fit: contain; border-radius: 20px;" src="Images/الرَّحْمَـنُ ﴿١﴾ عَلَّمَ الْقُرْآنَ ﴿٢﴾ خَلَقَ….jpg" height="100%" width="100%" alt=""></div>
+                            <div data-bs-toggle="modal" data-bs-target="#kk41" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -290px;">
+                              <img style="object-fit: contain; border-radius: 20px;" src="Images/b935942f-b074-4647-85c7-0e60ebe5997c.jpg" height="100%" width="100%" alt=""></div>
+                              <div data-bs-toggle="modal" data-bs-target="#kk42" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -300px;">
+                                <img style="object-fit: contain; border-radius: 20px;" src="images/0ce3de8a-3cf6-4950-bdd1-ace5969ed639.jpg" height="100%" width="100%" alt=""></div>
+                                <div data-bs-toggle="modal" data-bs-target="#kk43" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 20px;">
+                                  <img style="object-fit: contain; border-radius: 20px;" src="Images/33f48724-f305-4a66-a9cf-4bce458a9ecd.jpg" height="100%" width="100%" alt=""></div>
+                                  <div data-bs-toggle="modal" data-bs-target="#kk44" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -230px;">
+                                    <img style="object-fit: contain; border-radius: 20px;" src="Images/64da0530-d403-4a22-a8a4-780547b47e2c.jpg" height="100%" width="100%" alt=""></div>
+                              </div>
+                              <div class="row d-flex justify-content-center">
+                                <div data-bs-toggle="modal" data-bs-target="#kk45" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -340px;">
+                                <img style="object-fit: contain; border-radius: 20px;" src="Images/اللهم صل على محمد و آل محمد و عجل فرجهم و أهلك….jpg" height="100%" width="100%" alt=""></div>
+                                <div data-bs-toggle="modal" data-bs-target="#kk46" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -260px;">
+                                  <img style="object-fit: contain; border-radius: 20px;" src="Images/Arabic Calligraphy (2).jpg" height="100%" width="100%" alt=""></div>
+                                  <div data-bs-toggle="modal" data-bs-target="#kk47" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -340px;">
+                                    <img style="object-fit: contain; border-radius: 20px;" src="images/345d8e50-9997-468e-81d3-3f6f41af6217.jpg" height="100%" width="100%" alt=""></div>
+                                    <div data-bs-toggle="modal" data-bs-target="#kk48" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 20px;">
+                                      <img style="object-fit: contain; border-radius: 20px;" src="Images/DAMLA MAŞALLAH  Eserin teknik özelliği__ Tezhip….jpg" height="100%" width="100%" alt=""></div>
+                                      <div data-bs-toggle="modal" data-bs-target="#kk49" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -280px;">
+                                        <img style="object-fit: contain; border-radius: 20px;" src="Images/Calligraphy by Mohsin raza.jpg" height="100%" width="100%" alt=""></div>
+                                  </div>
+                                  <div class="row d-flex justify-content-center">
+                                    <div data-bs-toggle="modal" data-bs-target="#kk50" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -310px;">
+                                    <img style="object-fit: contain; border-radius: 20px;" src="Images/4a6c51e0-1ccd-47b8-adc4-a716a1626c4a.jpg" height="100%" width="100%" alt=""></div>
+                                    <div data-bs-toggle="modal" data-bs-target="#kk51" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -200px;">
+                                      <img style="object-fit: contain; border-radius: 20px;" src="Images/فبأي آلاء ربكما تكذبان….jpg" height="100%" width="100%" alt=""></div>
+                                      <div data-bs-toggle="modal" data-bs-target="#kk52" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -250px;">
+                                        <img style="object-fit: contain; border-radius: 20px;" src="images/404 Not Found.jpg" height="100%" width="100%" alt=""></div>
+                                        <div data-bs-toggle="modal" data-bs-target="#kk53" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 1cqw;">
+                                          <img style="object-fit: contain; border-radius: 20px;" src="Images/b57de0bd-9507-40ae-ac26-5fb16dba95ee.jpg" height="100%" width="100%" alt=""></div>
+                                          <div data-bs-toggle="modal" data-bs-target="#kk54" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -270px;">
+                                            <img style="object-fit: contain; border-radius: 20px;" src="Images/islamic-web_com.jpg" height="100%" width="100%" alt=""></div>
+                                      </div>
+                                      <div class="row d-flex justify-content-center">
+                                        <div data-bs-toggle="modal" data-bs-target="#kk55" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -325px;">
+                                        <img style="object-fit: contain; border-radius: 20px;" src="Images/0faee62e-9996-4026-97ba-6b849a92531d.jpg" height="100%" width="100%" alt=""></div>
+                                        <div data-bs-toggle="modal" data-bs-target="#kk56" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -210px;">
+                                          <img style="object-fit: contain; border-radius: 20px;" src="Images/Arif ARSLAN (@arslan_dr) _ Twitter.jpg" height="100%" width="100%" alt=""></div>
+                                          <div data-bs-toggle="modal" data-bs-target="#kk57" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -320px;">
+                                            <img style="object-fit: contain; border-radius: 20px;" src="images/fc7ff29e-b759-4d4d-aed8-032e8ae9969f.jpg" height="100%" width="100%" alt=""></div>
+                                            <div data-bs-toggle="modal" data-bs-target="#kk58" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;">
+                                              <img style="object-fit: contain; border-radius: 20px;" src="Images/5c43656a-f201-4c1a-aa96-763fa842712c.jpg" height="100%" width="100%" alt=""></div>
+                                              <div data-bs-toggle="modal" data-bs-target="#kk59" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -260px;">
+                                                <img style="object-fit: contain; border-radius: 20px;" src="Images/2b28b613-d0c6-48a4-ae65-22f773d2cf57.jpg" height="100%" width="100%" alt=""></div>
+                                          </div>
+                                          <div  class="row d-flex justify-content-center ">
+                                            <div data-bs-toggle="modal" data-bs-target="#kk60" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -270px;">
+                                            <img style="object-fit: contain; border-radius: 20px;" src="Images/Beauty Art Islam.jpg" height="100%" width="100%" alt=""></div>
+                                            <div data-bs-toggle="modal" data-bs-target="#kk61" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -140px;">
+                                              <img style="object-fit: contain; border-radius: 20px;" src="Images/__ خطّ Ḣ a Ṭ خطّ __.jpg" height="100%" width="100%" alt=""></div>
+                                              <div data-bs-toggle="modal" data-bs-target="#kk62" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -260px;">
+                                                <img style="object-fit: contain; border-radius: 20px;" src="Images/download (1).jpg" height="100%" width="100%" alt=""></div>
+                                                <div data-bs-toggle="modal" data-bs-target="#kk63" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: 10px;"></div>
+                                                  <div data-bs-toggle="modal" data-bs-target="#kk64" class="col-lg-2 md-6 sm-6" style="height: 100%; margin-top: -240px;">
+                                                    <img style="object-fit: contain; border-radius: 20px;" src="Images/Caligraphy.jpg" height="100%" width="100%" alt=""></div>
+                                              </div> </div>
+                                              <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/02b35acb-616d-410b-9df2-ef8b77fdb25a.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/02b35acb-616d-410b-9df2-ef8b77fdb25a.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/e08de20c-634e-4c9c-b81a-a3d75c8c8c24.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/e08de20c-634e-4c9c-b81a-a3d75c8c8c24.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/5f0394fe-41c3-4861-9373-0e8f9ee36329.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/5f0394fe-41c3-4861-9373-0e8f9ee36329.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/19f41583-c9ac-4d6c-8242-5ad9ce6c20f5.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/19f41583-c9ac-4d6c-8242-5ad9ce6c20f5.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Versions Share ©by_  █║ Rhèñdý Hösttâ ║█  Thank you for visiting my pin in Pinterest♡.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Versions Share ©by_  █║ Rhèñdý Hösttâ ║█  Thank you for visiting my pin in Pinterest♡.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div><div class="modal fade" id="kk5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Gamil Yoheb El Gamal.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Gamil Yoheb El Gamal.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Bismillah_ Benefits, Wazifa, and Importance.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Bismillah_ Benefits, Wazifa, and Importance.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/_سلام هي حتى مطلع الفجر_.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/_سلام هي حتى مطلع الفجر_.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/6676ca96-263e-4001-bcd1-e5ebbddd7abb.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/6676ca96-263e-4001-bcd1-e5ebbddd7abb.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/tüm Limanlar yakılır nuhun gemisi  tek seçenek….jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/tüm Limanlar yakılır nuhun gemisi  tek seçenek….jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/d500ed8f-788e-49c1-8e77-083ca0ddbbe2.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/d500ed8f-788e-49c1-8e77-083ca0ddbbe2.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/keyword-suggestions_com.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/keyword-suggestions_com.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/typography vol_ 1.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/typography vol_ 1.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/DesertRose___سبحان الله وبحمده سبحان الله….jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/d500ed8f-788e-49c1-8e77-083ca0ddbbe2.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Typography 7.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Typography 7.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Arabic calligraphy.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Arabic calligraphy.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Untitled.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Untitled.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/calligraphy names.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/calligraphy names.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/9ec901ab-979c-43b0-a686-347883ed1222.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/9ec901ab-979c-43b0-a686-347883ed1222.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Arabic calligraphy (1).jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Arabic calligraphy (1).jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/eba07725-3deb-4b21-a1ba-c9d9af9bdce8.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/eba07725-3deb-4b21-a1ba-c9d9af9bdce8.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Les Calligraphies · El Calam.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Les Calligraphies · El Calam.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/This item is unavailable - Etsy.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/This item is unavailable - Etsy.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Be satisfied with what Allah has apportioned for….jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Be satisfied with what Allah has apportioned for….jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk24" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/78dfd089-c812-406f-becb-211103edb289.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/78dfd089-c812-406f-becb-211103edb289.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk25" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Arabic calligraphy (1).jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Arabic calligraphy (1).jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk26" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/9ec901ab-979c-43b0-a686-347883ed1222.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/9ec901ab-979c-43b0-a686-347883ed1222.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk27" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/DesertRose,,, Bismillah.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/DesertRose,,, Bismillah.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk28" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/b935942f-b074-4647-85c7-0e60ebe5997c.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/b935942f-b074-4647-85c7-0e60ebe5997c.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk29" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/0ce3de8a-3cf6-4950-bdd1-ace5969ed639.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/0ce3de8a-3cf6-4950-bdd1-ace5969ed639.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk30" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/33f48724-f305-4a66-a9cf-4bce458a9ecd.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/33f48724-f305-4a66-a9cf-4bce458a9ecd.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk31" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/64da0530-d403-4a22-a8a4-780547b47e2c.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/64da0530-d403-4a22-a8a4-780547b47e2c.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk32" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/الأستاذ عدنان الشيخ عثمان _حمص.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/الأستاذ عدنان الشيخ عثمان _حمص.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk33" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/85d3b0d4-d6a7-4eb7-8e3a-f907912e2e3e.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/85d3b0d4-d6a7-4eb7-8e3a-f907912e2e3e.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk34" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/68e93791-adaf-44d7-84bb-73121c8a46d9.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/68e93791-adaf-44d7-84bb-73121c8a46d9.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk35" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Arabic calligraphy (3).jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Arabic calligraphy (3).jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk36" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/184929cc-9b04-4c25-bb7a-63d1a17a344d.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/184929cc-9b04-4c25-bb7a-63d1a17a344d.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk37" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/بسم الله الرحمن الرحيم.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/بسم الله الرحمن الرحيم.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk38" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/1cfeffbd-f87b-4eac-8718-02099710f57b.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/1cfeffbd-f87b-4eac-8718-02099710f57b.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk39" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/58731d5f-8550-4472-baa0-e658a2700fdb.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/58731d5f-8550-4472-baa0-e658a2700fdb.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk40" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/الرَّحْمَـنُ ﴿١﴾ عَلَّمَ الْقُرْآنَ ﴿٢﴾ خَلَقَ….jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/الرَّحْمَـنُ ﴿١﴾ عَلَّمَ الْقُرْآنَ ﴿٢﴾ خَلَقَ….jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk41" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/b935942f-b074-4647-85c7-0e60ebe5997c.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/b935942f-b074-4647-85c7-0e60ebe5997c.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk42" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/0ce3de8a-3cf6-4950-bdd1-ace5969ed639.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/0ce3de8a-3cf6-4950-bdd1-ace5969ed639.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk43" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/33f48724-f305-4a66-a9cf-4bce458a9ecd.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/33f48724-f305-4a66-a9cf-4bce458a9ecd.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk44" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/64da0530-d403-4a22-a8a4-780547b47e2c.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images//64da0530-d403-4a22-a8a4-780547b47e2c.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk45" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/اللهم صل على محمد و آل محمد و عجل فرجهم و أهلك….jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/اللهم صل على محمد و آل محمد و عجل فرجهم و أهلك….jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk46" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Arabic Calligraphy (2).jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Arabic Calligraphy (2).jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk47" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/345d8e50-9997-468e-81d3-3f6f41af6217.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/345d8e50-9997-468e-81d3-3f6f41af6217.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk48" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/DAMLA MAŞALLAH  Eserin teknik özelliği__ Tezhip….jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/DAMLA MAŞALLAH  Eserin teknik özelliği__ Tezhip….jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk49" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Calligraphy by Mohsin raza.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Calligraphy by Mohsin raza.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk50" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/4a6c51e0-1ccd-47b8-adc4-a716a1626c4a.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/4a6c51e0-1ccd-47b8-adc4-a716a1626c4a.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk51" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/فبأي آلاء ربكما تكذبان….jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/فبأي آلاء ربكما تكذبان….jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk52" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/404 Not Found.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/404 Not Found.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk53" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/b57de0bd-9507-40ae-ac26-5fb16dba95ee.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/b57de0bd-9507-40ae-ac26-5fb16dba95ee.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk54" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/islamic-web_com.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/islamic-web_com.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk55" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/0faee62e-9996-4026-97ba-6b849a92531d.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/0faee62e-9996-4026-97ba-6b849a92531d.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk56" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Arif ARSLAN (@arslan_dr) _ Twitter.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Arif ARSLAN (@arslan_dr) _ Twitter.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk57" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/fc7ff29e-b759-4d4d-aed8-032e8ae9969f.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/fc7ff29e-b759-4d4d-aed8-032e8ae9969f.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk58" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/5c43656a-f201-4c1a-aa96-763fa842712c.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/5c43656a-f201-4c1a-aa96-763fa842712c.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk59" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/2b28b613-d0c6-48a4-ae65-22f773d2cf57.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/2b28b613-d0c6-48a4-ae65-22f773d2cf57.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk60" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Beauty Art Islam.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Beauty Art Islam.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk61" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images//__ خطّ Ḣ a Ṭ خطّ __.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images//__ خطّ Ḣ a Ṭ خطّ __.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk62" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/download (1).jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/download (1).jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kk64" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 530px;">
+        <img src="Images/Caligraphy.jpg" height="100%" width="100%" style="object-fit: contain;" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="Images/Caligraphy.jpg"><button type="button" class="btn btn-primary">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+ <footer id="x2">
+  <div class="row">
+    <div id="x1" class="col-lg-4 col-sm-12 col-md-12">
+      <a  id="v1"><img src="Images/mm.png" height="70px" width="70px" alt="">ALIGRAPHY</a>
+      <p id="v2">Stay in the loop! Subscribe to our newsletter and be the first to know about exciting updates, exclusive offers, and helpful tips. Join our community and never miss out on the latest news. Just enter your email below to subscribe and stay connected!</p>
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-12">
+      <h3 id="v3" >Office <div id="underline"><span id="underr"></span></div></h3>
+      <p id="v4"> 30-A, Progressive Center, Suite  # 202-203, Main Shahrah-e-Faisal Rd,  near  Lal Kothi (house), Karachi, 75400</p>
+      <p id="v5">ahsanmemon0369@gmail.com</p>
+      <p id="v6">92 - 3092379046</p>
+    </div>
+    <div class="col-lg-2 col-md-12 col-sm-12">
+      <h3 id="v7" >Links <div id="underline"><span id="underr"></span></div></h3>
+          <ul id="v8" >
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">categories</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">Login/Register</a></li>
+
+          </ul>
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-12">
+      <h3 id="v9" >Newsletter <div id="underline"><span id="underr"></span></div></h3>
+      <form id="v10" action="">
+          <i id="v12" class="fa-regular fa-envelope"></i>
+          <input id="v11" type="email" required placeholder="Enter Your Email">
+          <button id="v13" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <div id="v14">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-pinterest"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS Plugins Code -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- source code aos -->
+<script>
+  AOS.init({
+    offset: 350,
+    duration: 1000,
+
+  });
+
+</script>
+
+</body>
+</html>

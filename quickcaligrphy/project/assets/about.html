@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js "></script>
+  <script src="https://kit.fontawesome.com/ef2ab9a6a2.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+/* font-family: 'Dancing Script', cursive; */
+
+
+  body
+    {
+        padding: 0%;
+        margin: 0%;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        background-color: rgb(236, 236, 236);
+    }
+
+    #logo
+{
+    margin-left: -15px;
+}
+
+#ul1 a
+{
+    animation: fadeupanchor 2s;
+    font-weight: 300 !important;
+    color:white!important;
+
+}
+
+#ul2 li a{
+  color: #333!important;
+  font-weight: 300!important;
+  animation: unset !important;
+  font-size: 20px !important;
+
+}
+
+
+@keyframes fadeupanchor {
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(40);
+    }
+    
+}
+
+
+#logo
+{
+    margin-left: -15px;
+    animation: fadeupanchorani 1s;
+}
+
+@keyframes fadeupanchorani {
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(-40);
+    }
+    
+}
+
+.navbar-brand
+{
+font-size: 30px;
+margin-left: 100px;
+color: #fff!important;
+font-family: "Poppins";
+} 
+
+
+
+
+
+.navbar
+{
+    height: 75px;
+}
+
+.navbar-toggler
+{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background:white;
+}
+
+#ul1 li
+{
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+}
+#ul1 li a:hover
+{
+    color:#bea163 !important;
+}
+    #main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+/* navbar simple strt  */
+.navbar
+{
+    height: 75px;
+}
+
+.navbar-toggler
+{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background:white;
+}
+
+#ul1 li
+{
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+}
+#ul1 li a:hover
+{
+    color:#bea163 !important;
+}
+
+
+
+
+
+#navhovr
+{
+    transition: .3s;
+}
+
+#navhovr:hover a
+{
+
+    color: #bea163;
+}
+
+.w-100
+{
+    height: 100vh;
+}
+#navhovr
+{
+    transition: .3s;
+}
+
+#navhovr:hover a
+{
+
+    color: #bea163;
+}
+
+.w-100
+{
+    height: 100vh;
+}
+
+
+#top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+    overflow: hidden;
+}
+
+#center{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-origin: center;
+    background-color: rgb(0, 0, 0);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    overflow: hidden;
+}
+
+#bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+     background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+#topp,#bottomm{
+    font-family: Founder;
+    font-size: 11.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#topp{
+    top: 100% !important;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+#bottomm{
+    top: 0% !important;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+#content{
+    margin-top: 70vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    width: 100%;
+    color: #fff;
+    gap: 5vh;
+}
+    .navbar
+{
+    height: 75px;
+}
+
+.navbar-toggler
+{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background:white;
+}
+
+#ul1 li
+{
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+}
+#ul1 li a:hover
+{
+    color:#994D1C;
+}
+
+#hover a:hover
+{
+    color:#994D1C;
+}
+#q3
+{
+  color: black;
+}
+     /* .card-text
+    {
+        font-size: 19px;
+        width: 90%;
+        font-family: "Poppins";
+        margin-left: 15px;
+    }
+    .card
+    {
+        border: none;
+        width: 90%;
+        margin-top: 20px;
+    }  */
+     #imgg
+    {
+        height: 400px;
+        width: 70%;
+        border-radius: 10px;
+    } 
+      .row h2{
+      font-family: "Poppins";
+      justify-content: center;
+      text-align: center;
+    }
+    #vide
+    {
+      height:600px;
+      width: 90%;
+    }
+    #dd
+    {
+      height: 400px;
+      width: 320px;
+      border-radius: 10px;
+    }
+    #cc
+    {
+      border-radius: 10px;
+      width: 280px;
+      height: 400px;
+      margin-left: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+  /* For mobile phones:*/ 
+   #dd{
+    margin-right: 20px;
+  }
+  #cc
+  {
+    margin-left: 60px;
+    margin-top: -15px;
+  }
+  #mm
+  {
+    position: relative !important;
+    left: -30px !important;
+    top: -50px !important;
+  }
+  #nn
+  {
+    margin-left: 70px;
+  }
+  #m2
+  {
+    width: 100% !important;
+  }
+  #card1
+  {
+    width: 175px;
+  }
+  #card2
+  {
+    width: 175px;
+    position: relative;
+    top: -120px;
+    left: 200px;
+    background-color: red;
+  }
+  #cardi3
+  {
+    position: relative;
+    top: 200px;
+  }
+  #q1
+  {
+    font-size: 24px !important;
+    position: relative;
+    left: -60px;
+    top: -20px;
+    font-weight: 500;
+    color: #bea163 !important;
+  }
+  #q3
+  {
+    color: #a1a1a1;
+    margin-left: -60px;
+    font-size: 22px !important;
+  }
+  #q4
+  {
+    color: #a1a1a1;
+    margin-left: -60px;
+    font-size: 22px !important;
+  }
+  #q5
+  {
+    color: #a1a1a1;
+    margin-left: -60px;
+    font-size: 22px !important;
+  }
+  #q6
+  {
+    color: #a1a1a1;
+    margin-left: -60px;
+    font-size: 22px !important;
+  }
+  #q2
+  {
+    color: black;
+    margin-left: -60px;
+    font-size: 22px !important;
+  }
+  #q0
+  {
+    height: 1750px !important;
+  }
+#k1
+{
+  height: 1800px !important;
+}
+#k2
+{
+  font-size: 20px !important;
+}
+#k3
+{
+  font-size: 28px !important;
+  margin-top: -20px !important;
+}
+#k4
+{
+  font-size: 23px !important;
+  text-align: left !important;
+margin-left: 10px !important;
+}
+#k5
+{
+  font-size: 28px !important;
+  margin-top: -20px !important; 
+}
+#k6
+{
+  font-size: 23px !important;
+  text-align: left !important;
+margin-left: 10px !important;
+}
+#w1
+{
+  font-size: 25px !important;
+}
+#w2
+{
+  font-size: 22px !important;
+  text-align: center;
+}
+#w3
+{
+  width: 100% !important;
+}
+#r1
+{
+  height: 1000px !important;
+}
+}
+#mm
+{
+  margin-left: 90px;
+}
+#roww
+{
+  height: 560px;
+  background-color: black;
+}
+#rowww
+{
+  position: relative;
+  top: -280px;
+}
+#x2
+{
+    height: 400px;
+    width: 100%;
+    background: #333;
+    border-radius: 20px;
+}
+#x1
+{
+    margin-top: 30px !important;
+}
+#v1
+{
+    font-size: 2.0rem;
+    font-weight: 400;
+    margin-left: 30px;
+    color: #ffffff;
+    font-family: 'Poppins';
+}
+#v2
+{
+    color: rgba(216, 205, 205, 0.521);
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 19px;
+    width: 80%;
+     font-family: "Poppins";
+}
+#v3
+{
+    margin-top: 33px;
+    margin-left:0px ;
+    color:rgb(216, 205, 205) ;
+    font-size: 28px;
+    font-family: 'Poppins';
+    position: relative;
+}
+#v4
+{
+    margin-top: 40px;
+    font-size: 19px;
+     font-family: "Poppins";
+     margin-left: 0px;
+     color:rgb(216, 205, 205,0.616) ;
+}
+#v5
+{
+    font-family: "Poppins";
+    color:rgba(216, 205, 205, 0.616) ;
+    margin-top: 10px;
+    font-size: 19px;
+    border-bottom: 1px solid rgba(216, 205, 205, 0.616);
+}
+#v6
+{
+    margin-left:0px ;
+    font-family: "Poppins";
+    font-size: 16px;
+    margin-top: 10px;
+    color:rgba(216, 205, 205, 0.685) ;
+    font-weight: bold;
+}
+#v7
+{
+    color:rgba(216, 205, 205, 0.685) ;
+    font-size: 28px;
+    margin-top: 33px !important;
+    margin-left:0px ;
+    font-family: 'Poppins';
+}
+#v8
+{
+    list-style: none;
+}
+#v8 li a
+{
+    text-decoration: none;
+    color:rgba(216, 205, 205, 0.685) ;
+    font-size: 20px;
+    line-height: 40px;
+    position: relative;
+    left: -30px;
+    top: 22px;
+    font-family: 'Poppins';
+} 
+#v8 li a:hover
+{
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.644);
+}
+#v9
+{
+    color:rgb(216, 205, 205) ;
+    font-size: 28px;
+    margin-top: 33px !important;
+    margin-left:0px ;
+    font-family: 'Poppins';
+}
+#v10
+{
+    font-size: 20px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 0px;
+    width: 80%;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    padding-bottom: 15px;
+}
+#v11
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccc;
+}
+#v12
+{
+    font-size: 21px;
+    margin-right: 10px;
+    color: #ccc;  
+    background-color: transparent;
+}
+#v13
+{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 21px;
+    color: #ccc;
+    margin-left: -60px !important;
+}
+#v14 i
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #333;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all .40s;
+}
+#v14 i:hover
+{
+    transform: scale(1.1);
+}
+#v14
+{
+    margin-top: 50px;
+}
+#underline
+{
+    width: 60%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: relative;
+top: 5px;
+left: 0px;
+}
+#underr
+{
+width: 15px;
+height: 5px;
+background: #ccc;
+border-radius: 3px;
+position: absolute;
+top: 5;
+left: 10px;
+animation: moving 4s linear infinite;
+}
+@keyframes moving
+{
+    0%
+    {
+        left: -20px;
+    }
+    100%
+    {
+        left: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #x2
+    {
+        height: 1200px;
+        background-color: #333;
+    }
+    #v3
+    {
+        font-size: 21px;
+        margin-left: 50px;
+    }
+    #v4
+    {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    #v5
+    {
+        font-size: 18px;
+        margin-left: 50px;
+        width: 80%;
+    }
+    #v6
+    {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    #v7
+    {
+        font-size: 21px;
+        margin-left: 50px;
+    }
+    #v8
+    {
+        margin-left: 50px;
+        font-size: 21px;
+    }
+    #v9
+    {
+        margin-left: 50px;
+        font-size: 21px;
+    }
+    #v10
+    {
+        font-size: 18px;
+        margin-left: 50px;
+        width: 70%;
+    }
+    #v14
+    {
+        margin-left: 50px;
+        font-size: 19px;
+    }
+}
+  </style>
+</head>
+<body>
+    <!-- navbar start -->
+    <div class="container-fluid overflow-hidden">
+    <div class="container-fluid " id="rel">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #333; height: 90px;">
+          <div class="container">
+            <a class="navbar-brand" id="logo" href="#" style="font-size: 2em; font-weight:400; font-family:'EB Garamond', serif; "><img src="images/com logo.png" alt="" height="70px" width="70px">ALIGRAPHY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mg-lg-0" id="ul1">
+                <li class="nav-item">
+                  <a class="nav-link  link-light " aria-current="page" href="index.html" target="_self">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active link-light" href="about.html" target="_self">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="gallery.html" target="_self">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu" id="ul2">
+                    <li><a class="dropdown-item" href="ALL.html" target="_blank">Show All</a></li>
+                    <li><a class="dropdown-item" href="Kids.html" target="_blank">Easy For Kids</a></li>
+                    <li><a class="dropdown-item" href="elder.html" target="_blank">Complex For Elder</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light " href="contact.html" target="_self">Contact</a>
+                </li>
+                <li class="nav-item" id="loginA">            
+                  <a class="nav-link  px-3 " href="#" style="font-weight: 300; font-size: 18px; color: #bea163;"><i class="fa-solid fa-person"></i> Login/Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> 
+    <!-- navbar end -->
+    <!-- slider start -->
+  
+      
+    <!-- slider end -->
+    <!-- firstc start -->
+    <div class="row" id="q0" style="background-image: url(images/wenhao-ryan-yBDAp3vesZE-unsplash.jpg); height: 1000px; background-position: center; margin-top: 76px;">
+      <div class="col-lg-8 col-md-12 col-sm-12">
+        <div class="card"  style="background-color: transparent; border: none; margin-left: 100px; margin-bottom: 150px; margin-top: 15px;">
+          <p class="card-text" id="q1" style="font-family: 'Poppins'; font-size: 49px;color:#bea163 ; margin-top: 80px; ">QUICK CALLIGRAPHY</p>
+          <p class="card-text" id="q2" style="color: #b9923ecb; font-size: 26px; font-family: sans-serif;margin-top: -25px;">Art is a language that transcends words, expressing emotions and ideas through strokes and colors, revealing the beauty of human creativity. In its myriad forms, art serves as a universal bridge connecting diverse perspectives and inspiring profound connections.</p>
+          <div style="width: 75%;">
+                    <p id="q3" class="card-text" style="font-family: 'Poppins'; font-size: 22px; color: rgba(255, 255, 255, 0.664);">Calligraphy is the beautiful art of writing, and it has been around for a very long time, starting in ancient civilizations like China around 200 BCE. People in different parts of the world, like the Middle East and Europe, also embraced calligraphy</p>
+          <p id="q4" class="card-text" style="font-family: 'Poppins'; font-size: 22px; color: rgba(255, 255, 255, 0.664);">Imagine it as a way of making writing not just words but a visual masterpiece. Calligraphy has been vital in preserving important writings throughout history, adding a touch of beauty to religious texts, historical records, and literature</p>
+          <p id="q5" class="card-text" style="font-family: 'Poppins'; font-size: 22px; color: rgba(255, 255, 255, 0.664);">Even today, people love practicing calligraphy for its calming and artistic qualities. It's a way to make writing a delightful experience for both the writer and those who get to admire the finished piece</p>
+          <p id="q6" class="card-text" style="font-family: 'Poppins'; font-size: 22px; color: rgba(255, 255, 255, 0.664);">Across cultures and epochs, calligraphy has evolved into a myriad of distinct styles, each reflecting the cultural, historical, and artistic influences of its time and place. From the ornate Arabic scripts to the elegant Chinese brushstrokes, calligraphy encapsulates the essence of diverse civilizations and their creative expressions</p>
+        </div>
+        </div>
+      </div> 
+    </div>
+       <!-- <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center mt-4">
+<img src="dmytro-tolokonov-pSJMUniM4G4-unsplash.jpg" id="imgg" alt="">
+      </div> -->
+     
+    <!-- first end -->
+     <!-- <div class="row">
+      <div class="col-lg-10 col-md-10 col-sm-10"></div>
+    <div class="card mt-5">
+        <video id="vid" class="d-flex justify-content-center" src="pexels-mikhail-nilov-6981411 (1080p).mp4" controls="mp4" ></video>
+      </div>
+    </div> -->
+    <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center mt-5">
+      <iframe class="embed-responsive-item" id="vide" src="images/production_id_3826741 (2160p).mp4"></iframe>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-12 col-md-4 col-sm-12 d-flex justify-content-center">
+        <p id="w1" style="font-family: 'Poppins'; font-size: 27px; color: #bea163; font-weight: 600;">OUR TEAM</p>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-4 col-sm-12 d-flex justify-content-center">
+        <p id="w2" style="font-family: 'Poppins'; font-size: 35px ; color: black; font-weight: bold; position: relative;
+        top: -13px;">MASTERMIND BHEIND THIS ART</p>
+    </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end" data-aos="fade-right" >
+        <img id="dd" src="images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 ">
+        <div class="card d-flex justify-content-start" data-aos="fade-left" style="background-color: transparent; border: none;" id="nn">
+          <p class="card-text" style="font-family: 'Poppins'; font-size: 22px; color: #bea163; position: relative; top: 50px;">PRESIDENT</p>
+          <p class="card-text" style="font-family: 'Poppins'; font-size: 38px; color: black; margin-top: 40px;">MUSKAN KAMRAN</p>
+          <p class="card-text" id="w3" style="color: #3d3d3d; width: 70%; font-size: 20px; font-family: 'Poppins';">Meet Muskan, the creative force and President of Quick calliraphy. With a passion for the artistry of calligraphy, Muskan brings a unique blend of skill and vision to our community. Muskan's journey in the world of calligraphy is a testament to her dedication and love for this timeless art form.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-lg-6 col-md-6 col-sm-12 " data-aos="fade-right">
+        <div class="card" id="mm" style="background-color: transparent; border: none; position: relative;left: 350px;">
+          <p class="card-text d-flex justify-content-start"  style="font-family: 'Poppins'; font-size: 22px; color: #bea163; position: relative; top: 50px;" id="m1">VICE PRESIDENT</p>
+          <p class="card-text d-flex justify-content-start" style="font-family: 'Poppins'; font-size: 38px; color: black; margin-top: 40px;" >FAHAD HUSSAIN</p>
+          <p class="card-text d-flex justify-content-start" style="color: #3d3d3d; width: 60%;font-size: 20px; font-family: 'Poppins';"  id="m2">Meet Fahad, the Vice President of Quick  Calligraphy.A true aficionado of Art,Fahad is a vital pillar of our creative  community. With a keen eye for detail  and a deep appreciation for the nuances  of this exquisite art form, Fahad plays a crucial role in shaping the vision of our website</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start" data-aos="fade-left">
+        <img id="cc" src="images/vince-fleming-j3lf-Jn6deo-unsplash.jpg" alt="">
+      </div>
+    </div> 
+ <div class="row" id="k1" style="background-color: #bea163; height: 600px; margin-top: 100px;">
+  <h2 id="k2" class="d-flex justify-content-center" style="margin-top: 35px; font-family: 'Poppins'; font-size: 39px;">CALLIGRAPHY IS WORTH IT FOR ARTIST AND USERS..!</h2>
+<div class="col-lg-6 col-md-12 col-sm-12">
+  <div class="card" style="background-color: transparent; border: none;">
+    <h2 id="k3" style="font-family: 'Poppins';">FOR ARTIST</h2>
+  <p id="k4" style="font-size: 22px; font-family: 'Poppins'; text-align: center;">By uploading your art pieces on our online art gallery you can reach a much wider audience and increase your chances of generating sales. we not only gives you a platform to showcase your art but also markets it to increase your reach. We also have a dedicated customer service team that facilitates potential buyers of your art and makes the whole process of selling your art smooth and hassle-free. Not only this but Quick Calligraphy also delivers the artwork on your behalf to the buyer, collects the payment and transfers it to you in no time. Our logistics team works day and night to ensure your artworks reaches its destinations all over Pakistan. We bear the entire burden from finding potential buyers for you to delivering your artwork to those buyers and transferring your payment to you so that you can just relax and focus on creating.</p>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12 col-md-12">
+  <div class="card" style="background-color: transparent; border: none;">
+    <h2 id="k5" style="font-family: 'Poppins';">FOR USERS</h2>
+    <p id="k6" style="font-size: 22px; font-family: 'Poppins'; text-align: center;">
+  on the other hand Quick Calligraphy provides you with all kinds of artwork in one e-gallery. Now you do not have to run from store to store, artist to artist to find the perfect painting for your home or office. We have artists from all over Pakistan under our umbrella providing you with a variety of artwork from calligraphy, to paintings & phone cases and so SO much more. Anything you are looking for, we have surely got it at very reasonable prices. You will not find such affordable art of remarkable quality elsewhere. Simply select your favourite category and check out the art, add your desired piece to the cart, proceed to check out and voila! Your painting will be at your door in no time. It’s that simple. It is the only online art gallery in Pakistan providing you this much variety and housing hundreds of artists from all over the country.</p>
+</div>
+</div>
+ </div>
+
+  <div id="main">
+      <div id="top">
+          <h1 id="topp">CALLIGRAPHY</h1>
+      </div>
+      <div id="center">
+          <div id="content">
+            
+              <div class="row mt-5" id="roww" >
+                <div class="col lg-3 sm-6" >
+                  <div class="card" style="background-color: transparent; font-family:'Poppins'; margin-top: 80px; border-right: 1px solid #3d3d3d; border-bottom: 1px solid #3d3d3d;">
+                    <div class="card-body">
+                      <h5 class="card-title text-white d-flex justify-content-center" style="font-size: 38px; position: relative;top: 8px; font-family: 'Times New Roman', Times, serif;"><span class="count">110</span></h5>
+                      <p class="card-text d-flex justify-content-center" style="font-size: 29px; color: gray;">Satisfied Clients</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col lg-3 sm-6">
+                  <div class="card" style="background-color: transparent; font-family:'Poppins'; margin-top: 80px; border-left: 1px solid #3d3d3d; border-bottom: 1px solid #3d3d3d; position: relative; right: 21px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-white d-flex justify-content-center" style="font-size: 38px; font-family:'Times New Roman', Times, serif; position: relative;top: 8px;"><span class="count">386</span></h5>
+                      <p class="card-text d-flex justify-content-center" style="font-size: 29px; color: grey;">Number of pieces Sold</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 sm-12" id="cardi3">
+                  <div class="card" style="background-color: transparent;">
+                    <div class="card-text" style="font-size: 45px; font-family:'Poppins'; color: white; margin-top: 15px;">CHECK OUT HOW MUCH QUICK CALLIGRAPHY FUSED INTO LIVES!</div>
+                    <h5 class="card-text" style="color: #bea163; font-family: 'Poppins'; font-size: 29px; margin-top: 10px;">QUICK CALLIGRAPHY</h5>
+                    <p class="card-text" style="font-family: 'Times New Roman', Times, serif; font-size: 20px;color: #3d3d3d; margin-top: 10px; width: 90%;">Art can even be shocking. It is a creative piece that an artist uses to spur the discussion among people. Art also inspires people and motivates them with incredible meaning hidden behind it. It even transports people into different world of reality, and move us into subconscious locations that we have no idea that it existed.</p>
+                  </div>
+                  </div>
+              </div>
+              <div class="row" id="rowww">
+                <div class="col-lg-3 sm-6">
+                  <div class="card" id="card1" style="background-color: transparent; font-family:'Poppins';margin-top:-70px; border-right: 1px solid #3d3d3d; border-bottom: 1px solid #3d3d3d;">
+                    <div class="card-body ">
+                      <h5 class="card-title text-white d-flex justify-content-center" style="font-size: 38px; position: relative;top: 8px; font-family: 'Times New Roman', Times, serif;"> <span class="count">523</span></h5>
+                      <p class="card-text d-flex justify-content-center" style="font-size: 29px; color: grey;">Register User</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card" id="card2" style="background-color: transparent; font-family:'Poppins'; margin-top: -70px; border-left: 1px solid #3d3d3d; border-bottom: 1px solid #3d3d3d; position: relative; right: 21px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-white d-flex justify-content-center" style="font-size: 38px; position: relative;top: 8px; font-family: 'Times New Roman', Times, serif;"><span class="count">24</span></h5>
+                      <p class="card-text d-flex justify-content-center" style="font-size: 29px; color: grey; ">Team Size</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="card bg-dark text-white" style="position: relative; bottom: 170px;">
+      <img src="images/codioful-formerly-gradienta-lweK7Wme_jo-unsplash.jpg"class="card-img" height="250px" width="100%" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title" style="font-family: 'Poppins'; font-size: 26px; justify-content: center; display: flex;margin-top: 20px; color: #bea163;">WE DELIVER YOU</h5>
+        <p class="card-text" style="font-family: 'Poppins'; font-size: 30px; justify-content: center; display: flex; margin-top: 15px;">Premium Furnishing Art for Your All Living Spaces</p>
+        <p class="card-text" style="font-family: 'Poppins'; font-size: 23px; justify-content: center; display: flex;margin-top: 17px; color: rgba(255, 255, 255, 0.692);">Call us: 03092379046 / 03111075154</p>
+      </div>
+    </div>
+      </div>
+      <div id="bottom">
+          <h1 id="bottomm">CALLIGRAPHY</h1>
+      </div>
+  </div>
+</div>
+    
+    
+     <div class="row" style="margin-top: 80px;">
+<div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+<div class="card" style="height: 200px; border: none; background-color: transparent;">
+  <i class="fa-solid fa-clock" style="font-size: 45px; justify-content: center; display: flex; color: #bea163;"></i>
+<h3 class="card-title" style="font-family: 'Times New Roman', Times, serif; justify-content: center; display: flex; font-size: 29px; margin-top: 20px;">2010</h3>
+<p class="card-text" style="font-family: 'Poppins' ; font-size: 22px;">Year founded</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+  <div class="card" style="height: 200px; border: none; background-color: transparent;">
+    <i class="fa-solid fa-user-group" style="font-size: 45px; justify-content: center; display: flex; color: #bea163;"></i>
+    <h3 class="card-title" style="font-family: 'Times New Roman', Times, serif; justify-content: center; display: flex;font-size: 29px; margin-top: 20px;">100%</h3>
+    <p class="card-text " style="font-family: 'Poppins' ; font-size: 22px;">Customer Satisfaction</p>
+    </div>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+  <div class="card" style="height: 200px; border: none; background-color: transparent;">
+    <i class="fa-solid fa-address-book" style="font-size: 45px; justify-content: center; display: flex; color: #bea163;"></i>
+    <h3 class="card-title" style="font-family: 'Poppins'; justify-content: center; display: flex; font-size: 29px;margin-top: 20px;">Contact us</h3>
+    <p class="card-text" style="font-family: 'Poppins' ; font-size: 22px;">We're here to help you</p>
+    </div>
+</div>
+   </div>
+  </div>
+  <footer id="x2">
+    <div class="row">
+      <div id="x1" class="col-lg-4 col-sm-12 col-md-12">
+        <a  id="v1"><img src="images/com logo.png" height="70px" width="70px" alt="">ALIGRAPHY</a>
+        <p id="v2">Stay in the loop! Subscribe to our newsletter and be the first to know about exciting updates, exclusive offers, and helpful tips. Join our community and never miss out on the latest news. Just enter your email below to subscribe and stay connected!</p>
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12">
+        <h3 id="v3" >Office <div id="underline"><span id="underr"></span></div></h3>
+        <p id="v4"> 30-A, Progressive Center, Suite  # 202-203, Main Shahrah-e-Faisal Rd,  near  Lal Kothi (house), Karachi, 75400</p>
+        <p id="v5">ahsanmemon0369@gmail.com</p>
+        <p id="v6">92 - 3092379046</p>
+      </div>
+      <div class="col-lg-2 col-md-12 col-sm-12">
+        <h3 id="v7" >Links <div id="underline"><span id="underr"></span></div></h3>
+            <ul id="v8" >
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">categories</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Login/Register</a></li>
+  
+            </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12">
+        <h3 id="v9" >Newsletter <div id="underline"><span id="underr"></span></div></h3>
+        <form id="v10" action="">
+            <i id="v12" class="fa-regular fa-envelope"></i>
+            <input id="v11" type="email" required placeholder="Enter Your Email">
+            <button id="v13" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div id="v14">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://printerest.com/"><i class="fa-brands fa-pinterest"></i></a> 
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+    $('.count').counterUp({
+    delay: 10,
+    time: 1000
+});
+var tl = gsap.timeline({scrollTrigger:{
+    trigger:"#main",
+//    markers:true,
+    start:"50% 50%",
+    end:"100% 50%",
+    scrub:2,
+    pin:true
+}});
+tl
+.to("#center",{
+   height: "100vh",
+},'a')
+.to("#top",{
+    top: "-50%",
+ },'a')
+ .to("#bottom",{
+    bottom: "-50%",
+ },'a')
+.to("#topp",{
+    top: "60%"
+ },'a')
+ .to("#bottomm",{
+    bottom: "-30%"
+ },'a')
+.to("#center-h1",{
+   top: "-30%"
+},'a')
+.to("#content",{
+   delay: -0.2,
+   marginTop: "0%"
+})
+
+
+
+AOS.init();
+   </script>
+</body>
+</html>

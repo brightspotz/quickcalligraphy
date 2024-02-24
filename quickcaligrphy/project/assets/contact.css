@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+/* 'EB Garamond', serif */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+/* font-family: 'Dancing Script', cursive; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* navigation css */
+#ul1
+{
+    animation: fadeupanchor 2s;
+}
+
+@keyframes fadeupanchor {
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(40);
+    }
+    
+}
+
+
+#logoani
+{
+    animation: fadeupanchorani 1s;
+    margin-left: -15px;
+
+
+}
+@keyframes fadeupanchorani {
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(-40);
+    }
+    
+}
+
+
+#navbr
+{
+background-color: #ebecf0;
+}
+#ulli
+{
+font-family: "Poppins";
+font-size: 24px;
+margin-left: 400px;
+}
+.navbar-brand
+{
+font-size: 30px;
+margin-left: 100px;
+color: #fff!important;
+font-family: "Poppins";
+} 
+
+.navbar
+{
+    height: 75px;
+}
+
+.navbar-toggler
+{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background:white;
+}
+
+#ul1 li
+{
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+}
+#ul1 li a:hover
+{
+    color:#bea163 !important;
+}
+
+#navhovr
+{
+    transition: .3s;
+}
+
+#navhovr:hover a
+{
+
+    color: #bea163;
+}
+
+.w-100
+{
+    height: 100vh;
+}
+
+/* contact form css */
+
+.contact_form
+{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #bea163;
+    padding: 30px;
+    margin-top: 75px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+}
+
+.contact_form h1
+{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #333;
+    
+}
+
+.container-2
+{
+    max-width: 700px;
+    margin-top: 0 auto;
+}
+
+.container-2 h2
+{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+
+    
+}
+
+.contact_form .main
+{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+
+.content
+
+{
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background-color:#ffffff ;
+    box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.googlemap 
+{
+    flex-basis: 50%;
+    align-items: center;
+    display: grid;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.googlemap iframe
+{
+    max-width: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.btn,
+button,
+input
+{
+    border-radius: 35px;
+}
+
+
+.btn,button {
+    color: #333;
+    transition: 0.3s all;
+    border: 1px solid #f6f4f4;
+    background-color: #f6f4f4;
+}
+
+
+.btn:hover {
+    color: #111; 
+    background-color: #bea163;
+    
+}
+
+.contact_form form
+{
+    margin: 30px 0;
+
+}
+
+.contact_form input,textarea
+{
+    outline: none;
+    margin-bottom: 10px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f6f4f4;
+    transition: 0.3s ease;
+}
+
+.contact_form input:focus
+{
+    border: 1px solid #bea163;
+}
+
+.contact_form .content button{
+
+    font-size: 14px;
+    width: 100%;
+    font-weight: 500;
+    
+}
+
+
+@media(max-width:736px)
+{
+    .contact_form .main
+    {
+        flex-direction: column;
+    }
+
+    .contact_form form
+    {
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    .googlemap iframe
+    {
+        border-radius: 0%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+    }
+    .content
+    {
+        
+        border-radius: 0%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    
+    }
+}
+
+/* footer */
+#x2
+{
+    height: 400px;
+    width: 100%;
+    background: #333;
+
+    
+}
+#x1
+{
+    margin-top: 30px !important;
+}
+#v1
+{
+    font-size: 2.0rem;
+    font-weight: 400;
+    margin-left: 30px;
+    color: #ffffff;
+    font-family: 'Poppins';
+}
+#v2
+{
+    color: rgba(216, 205, 205, 0.521);
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 19px;
+    width: 80%;
+     font-family: "Poppins";
+}
+#v3
+{
+    margin-top: 33px;
+    margin-left:0px ;
+    color:rgb(216, 205, 205) ;
+    font-size: 28px;
+    font-family: 'Poppins';
+    position: relative;
+}
+#v4
+{
+    margin-top: 40px;
+    font-size: 19px;
+     font-family: "Poppins";
+     margin-left: 0px;
+     color:rgb(216, 205, 205,0.616) ;
+}
+#v5
+{
+    font-family: "Poppins";
+    color:rgba(216, 205, 205, 0.616) ;
+    margin-top: 10px;
+    font-size: 19px;
+    border-bottom: 1px solid rgba(216, 205, 205, 0.616);
+}
+#v6
+{
+    margin-left:0px ;
+    font-family: "Poppins";
+    font-size: 16px;
+    margin-top: 10px;
+    color:rgba(216, 205, 205, 0.685) ;
+    font-weight: bold;
+}
+#v7
+{
+    color:rgba(216, 205, 205, 0.685) ;
+    font-size: 28px;
+    margin-top: 33px !important;
+    margin-left:0px ;
+    font-family: 'Poppins';
+}
+#v8
+{
+    list-style: none;
+}
+#v8 li a
+{
+    text-decoration: none;
+    color:rgba(216, 205, 205, 0.685) ;
+    font-size: 20px;
+    line-height: 40px;
+    position: relative;
+    left: -30px;
+    top: 22px;
+    font-family: 'Poppins';
+} 
+#v8 li a:hover
+{
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.644);
+}
+#v9
+{
+    color:rgb(216, 205, 205) ;
+    font-size: 28px;
+    margin-top: 33px !important;
+    margin-left:0px ;
+    font-family: 'Poppins';
+}
+#v10
+{
+    font-size: 20px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 0px;
+    width: 80%;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    padding-bottom: 15px;
+}
+#v11
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccc;
+}
+#v12
+{
+    font-size: 21px;
+    margin-right: 10px;
+    color: #ccc;  
+    background-color: transparent;
+}
+#v13
+{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 21px;
+    color: #ccc;
+    margin-left: -60px !important;
+}
+#v14 i
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #333;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all .40s;
+}
+#v14 i:hover
+{
+    transform: scale(1.1);
+}
+#v14
+{
+    margin-top: 50px;
+}
+#underline
+{
+    width: 60%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: relative;
+top: 5px;
+left: 0px;
+}
+#underr
+{
+width: 15px;
+height: 5px;
+background: #ccc;
+border-radius: 3px;
+position: absolute;
+top: 5;
+left: 10px;
+animation: moving 4s linear infinite;
+}
+@keyframes moving
+{
+    0%
+    {
+        left: -20px;
+    }
+    100%
+    {
+        left: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #x2
+    {
+        height: 1200px;
+        background-color: #333;
+    }
+    #v3
+    {
+        font-size: 21px;
+        margin-left: 50px;
+    }
+    #v4
+    {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    #v5
+    {
+        font-size: 18px;
+        margin-left: 50px;
+        width: 80%;
+    }
+    #v6
+    {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    #v7
+    {
+        font-size: 21px;
+        margin-left: 50px;
+    }
+    #v8
+    {
+        margin-left: 50px;
+        font-size: 21px;
+    }
+    #v9
+    {
+        margin-left: 50px;
+        font-size: 21px;
+    }
+    #v10
+    {
+        font-size: 18px;
+        margin-left: 50px;
+        width: 70%;
+    }
+    #v14
+    {
+        margin-left: 50px;
+        font-size: 19px;
+    }
+}
+/* footer end */
